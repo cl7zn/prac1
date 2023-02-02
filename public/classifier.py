@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import naive_bayes as nb
 import sys
 
@@ -11,13 +5,8 @@ model = nb.NaiveBayesClassifier(k=0.5)
 model.load_from_file()
 
 
-# In[5]:
-
 
 model
-
-
-# In[7]:
 
 
 def process_stdin(stream):
@@ -46,9 +35,6 @@ files_to_score = process_stdin(sys.stdin)
 
 for fname in files_to_score:
     score_one_file(fname, model)
-
-
-# In[ ]:
 
 
 
